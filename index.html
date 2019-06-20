@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>HV vegan alpha</title>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300" type="text/css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal-video.min.css">
+    
+    
+
+
+
+<!--    <link rel="stylesheet" type="text/css" href="css/modal.css"> -->
+
+  
+</head>
+
+<body>
+    <header style="float: right">
+    <a href="https://www.instagram.com/harmoniousvegan/" target="_blank"><img height="32rem" src="img/Instagram_AppIcon_Aug2017.png"></a>
+    <a href="https://www.linkedin.com/in/harmoniettangonan/" target="_blank"><img height="32rem" src="img/In-Blue-34_nontransparent.png"></a>
+    </header>
+<div id="navbar"></div>
+
+    
+    <figure class="container" style="float: left">
+        <img src="img/ontherez_large.webp" style="height: 20rem" style="width: 15rem">
+        <button class="js-video-button" data-video-id='59462975' data-channel="vimeo">The Tiziano Project: On the Rez</button>
+    </figure>
+    
+    
+
+    <div class="container" style="float: left">
+        <img src="img/at_the_table.jpg" style="height: 20rem" style="width: 15rem">
+        <button class="js-video-button" data-video-id='e4s_UaZNY9w'>The Tiziano Project: At the Table</button>
+        
+    </div>
+    
+    
+    <div class="container" style="float: left">
+        <img src="img/hangout.jpg" style="height: 20rem" style="width: 15rem">
+        <button class="js-video-button" data-video-id='2QlX5pqkMxk'>The Hangout Music Fest &amp; BP Oil Spill</button>
+    </div>
+    
+    
+    <div class="container" style="float: left">
+        <img src="img/lucy_walker.jpg" style="height: 20rem" style="width: 15rem">
+        <button class="js-video-button" data-video-id='ltJ7prtVP0Y'>Lucy Walker</button>
+    </div>
+    
+    
+    <div class="container" style="float: left">
+        <img src="img/public_enemy.jpg" style="height: 20rem" style="width: 15rem">
+        <button class="js-video-button" data-video-id='HGaELLpArhw' >Virgin Mobile RE*Generation feat. Public Enemy</button>
+    </div>
+    
+    
+    <div class="container" style="float: left">
+        <img src="img/vmff.jpg" style="height: 20rem" style="width: 15rem">
+        <button class="js-video-button" data-video-id='kKigKVjzcWo'>Virgin Mobile FreeFest</button>
+    </div>
+    
+    
+<!--
+
+        <button class="js-video-button" data-video-id='e4s_UaZNY9w'>The Tiziano Project: At the Table</button>
+    <p>Tiziano Latvia</p>
+
+
+        <button class="js-video-button" data-video-id='kKigKVjzcWo'>Virgin Mobile Freefest</button>
+<p>Virgin Mobile FreeFest</p>
+
+    <button class="js-video-button" data-video-id='ltJ7prtVP0Y'>Lucy Walker</button>
+<p>Lucy Walker</p>
+
+    <button class="js-video-button" data-video-id='2QlX5pqkMxk'>The Hangout Mustic Fest</button>
+    <p>The Hangout Music Fest &amp; BP Oil Spill</p>
+
+<button class="js-video-button" data-video-id='HGaELLpArhw'>Public Enermy</button>
+<p>Public Enemy raises awareness on Youth Homelessness with Virgin Mobile's RE*Generation</p> -->
+
+    
+    
+    
+
+
+</body>
+    <!-- wasn't originally working because the JS jquery needs to be after body, not before.  -->
+<script src="js/jquery-modal-video.min.js"></script>
+<script>
+$(document).ready(function() {
+        $("#navbar").load("nav.html");
+$(".js-modal-btn").modalVideo();
+$(".js-modal-btn").modalVideo({channel:'vimeo'});
+$(".js-video-button").modalVideo({
+		youtube:{
+            controls:0,
+				nocookie: true
+			}
+    });
+});
+    
+</script>
+
+</html>
